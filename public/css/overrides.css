@@ -1,0 +1,46 @@
+.container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 98% !important;
+}
+.m-checkbox>span, .m-radio>span{
+  top:-15px!important;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 98% !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 98% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 98% !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
