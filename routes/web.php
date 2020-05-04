@@ -17,3 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('permission-group', 'PermissionGroupController');
+
+Route::get('/permission', 'PermissionController@index')->name('permission.index');
+Route::get('/permission/create', 'PermissionController@create')->name('permission.create');
+Route::post('/permission/store', 'PermissionController@store')->name('permission.store');

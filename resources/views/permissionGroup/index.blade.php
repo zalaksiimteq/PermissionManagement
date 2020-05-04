@@ -38,6 +38,10 @@
             <div class="col-md-12">
                 <div id="accordion">
                     <table class="table table-stripped" >
+                    <tr>
+                        <td>Group Name</td>
+                        <td>Action</td>
+                    </tr>
                     @foreach ($permission_groups as $permission_group)
                         <tr>
                             <td>{{ $permission_group->name }}</td>

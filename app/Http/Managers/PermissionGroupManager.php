@@ -28,4 +28,14 @@ class PermissionGroupManager
 
         return $permission_group;
     }
+
+    public static function permissionGroup(){
+        $permission_group_arr = array();
+        $permission_groups = PermissionGroup::get();
+
+        foreach($permission_groups as $group){
+            $permission_group_arr[$group->permission_group_id] = $group->name;
+        }
+        return $permission_group_arr;
+    }
 }
