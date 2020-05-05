@@ -13,6 +13,6 @@ class PermissionGroup extends Model
     public $timestamps = false;
 
     public function permission(){
-        return $this->hasMany(App\Models\Permission::class, 'group_id', 'permission_group_id');
+        return $this->hasMany(Permission::class, 'group_id', 'permission_group_id');
     }
 }

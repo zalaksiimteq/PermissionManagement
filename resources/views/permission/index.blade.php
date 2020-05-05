@@ -58,13 +58,14 @@
 
                         @foreach ($permissions as $key => $permission_groups)
                         <tr>
-                            <td> <button type="button" class="btn btn-primary btn-toggle-permission" id="btn_toggle_permission" data-group-id="{{ $permission_groups['permission_group_id'] }}" > > </button></td>
-                            <td><span style="font-weight:bold;"> {{ $permission_groups['name'] }}</span></td>
+                            <td> <button type="button" class="btn btn-primary btn-toggle-permission" id="btn_toggle_permission" data-group-id="{{ $permission_groups->permission_group_id }}" > > </button></td>
+                            <td colspan="2" ><span style="font-weight:bold;"> {{ $permission_groups->name }}</span></td>
                         </tr>
-                            @foreach ($permission_groups['detail'] as $p_key => $permission)
-                            <tr id="tr_{{ $permission_groups['permission_group_id'] }}_$p_key" class="tr_{{ $permission_groups['permission_group_id'] }}" style="display:none;" >
-                                <td>{{ $permission['permission_key'] }} </td>
-                                <td>{{ $permission['permission_title'] }} </td>
+                            @foreach ($permission_groups->permission as $p_key => $permission)
+                            <tr id="tr_{{ $permission_groups->permission_group_id }}_$p_key" class="tr_{{ $permission_groups->permission_group_id }}" style="display:none;" >
+                                <td> </td>
+                                <td>{{ $permission->permission_key }} </td>
+                                <td>{{ $permission->permission_title }} </td>
                             </tr>
                             @endforeach
                         @endforeach
